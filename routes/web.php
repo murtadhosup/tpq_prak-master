@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SantriController;
 use App\Http\Controllers\pengurusController;
+use App\Http\Controllers\bukuController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,3 +30,9 @@ Route::get('pengurus',[pengurusController::class,'index']);
 Route::get('pengurus/{id_pengurus}/edit', [pengurusController::class,'edit']);
 Route::post('pengurus/{id_pengurus}/update', [pengurusController::class,'update']);
 Route::get('pengurus/{id_pengurus}/delete',[pengurusController::class,'delete']);
+
+//buku
+Route::get('buku',[bukuController::class,'index']);
+Route::get('buku/{id_buku}/edit', [bukuController::class,'edit']);
+Route::post('buku/{id_buku}/update', [bukuController::class,'update']);
+Route::get('buku/{id_buku}/delete',[bukuController::class,'delete']);
