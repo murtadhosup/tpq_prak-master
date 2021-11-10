@@ -13,3 +13,5 @@ class pengurus extends Model
     protected $fillable = ['id_pengurus','nama','email','hp','gender',
     'password','aktif'];
 }
+
+

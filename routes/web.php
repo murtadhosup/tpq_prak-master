@@ -19,6 +19,11 @@ use App\Http\Controllers\bukuController;
 Route::get('/', function () {
     return view('home');
 });
+
+Route::get('/dashboard', function () {
+    return view('dashbord/dashboard');
+});
+
 //santri
 Route::get('Santri',[SantriController::class,'index']);
 Route::get('Santri/{id_Santri}/edit', [SantriController::class,'edit']);
@@ -27,9 +32,12 @@ Route::get('Santri/{id_Santri}/delete',[SantriController::class,'delete']);
 
 //pengurus
 Route::get('pengurus',[pengurusController::class,'index']);
+Route::get('/pengurus/create',[pengurusController::class,'add']) ;
+Route::post('/pengurus/store',[pengurusController::class,'store']) ;
 Route::get('pengurus/{id_pengurus}/edit', [pengurusController::class,'edit']);
 Route::post('pengurus/{id_pengurus}/update', [pengurusController::class,'update']);
 Route::get('pengurus/{id_pengurus}/delete',[pengurusController::class,'delete']);
+
 
 //buku
 Route::get('buku',[bukuController::class,'index']);
