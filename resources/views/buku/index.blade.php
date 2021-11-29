@@ -31,15 +31,21 @@
                 </div>
               </div>
             </nav>
-        <div class="container">
-            <div class = 'row'>
+            <div class="container">
+              <div class = 'row'>
                 <div class='col-6'>
-                   <h1>Buku</h1>
+                   <h1>Pengurus</h1>
                 <div class='col-6'>
-                  
-                       <button type="button" class="btn btn-primary btn-sm float-right" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                       buku
-                       </button>
+                </div>
+                <!-- Button trigger modal -->
+                <a href="{{ url('buku/create') }}" class="btn btn-success btn-sm">
+                  <i class="fa fa-plus"></i> Add
+              </a>
+
+
+                  Tambah Buku 
+                 
+                  </button>
                     </div>
 
                       </div>

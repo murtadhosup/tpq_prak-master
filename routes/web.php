@@ -43,6 +43,8 @@ Route::get('pengurus/{id_pengurus}/delete',[pengurusController::class,'delete'])
 
 //buku
 Route::get('buku',[bukuController::class,'index']);
+Route::get('/buku/create',[bukuController::class,'add']) ;
+Route::post('/buku/store',[bukuController::class,'store']) ;
 Route::get('buku/{id_buku}/edit', [bukuController::class,'edit']);
 Route::post('buku/{id_buku}/update', [bukuController::class,'update']);
 Route::get('buku/{id_buku}/delete',[bukuController::class,'delete']);
