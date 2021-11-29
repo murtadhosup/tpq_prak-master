@@ -34,7 +34,7 @@
                       </div>
                       <div class="mb-3">
                         <label for="formGroupExampleInput5" class="form-label">KOTA LAHIR</label>
-                        <input name="kota_lahir" type="integer" class="form-control" id="formGroupExampleInput" placeholder="kota lahir" value="{{ $Santri->kota_lahir}}">
+                        <input name="kota_lahir" type="text" class="form-control" id="formGroupExampleInput" placeholder="kota lahir" value="{{ $Santri->kota_lahir}}">
                       </div>
                       <div class="mb-3">
                        <label for="formGroupExampleInput6" class="form-label">NAMA ORTU</label>
@@ -46,7 +46,7 @@
                        </div>
                        <div class="mb-3">
                          <label for="formGroupExampleInput8" class="form-label">NO HP</label>
-                         <input name="no_hp" type="integer" class="form-control" id="formGroupExampleInput" placeholder="no hp" value="{{ $Santri->no_hp}}">
+                         <input name="no_hp" type="varchar" class="form-control" id="formGroupExampleInput" placeholder="no hp" value="{{ $Santri->no_hp}}">
                        </div>
                        <div class="mb-3">
                         <label for="formGroupExampleInput9" class="form-label">EMAIL</label>

@@ -16,6 +16,10 @@
                   <form action="{{ url('pengurus/store') }} " method="POST">
                         
                    @csrf
+                   <div class="mb-3">
+                    <label for="formGroupExampleInput1" class="form-label">ID_PENGURUS</label>
+                    <input name="id_pengurus" type="text" class="form-control" id="formGroupExampleInput2" placeholder="id pengurus" >
+                   </div>
                        <div class="mb-3">
                         <label for="formGroupExampleInput2" class="form-label">NAMA</label>
                         <input name="nama" type="text" class="form-control" id="formGroupExampleInput2" placeholder="nama pengurus" >

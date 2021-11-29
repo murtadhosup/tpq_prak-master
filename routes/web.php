@@ -26,6 +26,8 @@ Route::get('/dashboard', function () {
 
 //santri
 Route::get('Santri',[SantriController::class,'index']);
+Route::get('/Santri/create',[SantriController::class,'add']) ;
+Route::post('/Santri/store',[SantriController::class,'store']) ;
 Route::get('Santri/{id_Santri}/edit', [SantriController::class,'edit']);
 Route::post('Santri/{id_Santri}/update', [SantriController::class,'update']);
 Route::get('Santri/{id_Santri}/delete',[SantriController::class,'delete']);
@@ -44,3 +46,8 @@ Route::get('buku',[bukuController::class,'index']);
 Route::get('buku/{id_buku}/edit', [bukuController::class,'edit']);
 Route::post('buku/{id_buku}/update', [bukuController::class,'update']);
 Route::get('buku/{id_buku}/delete',[bukuController::class,'delete']);
+
+//login
+Route::get('/login', function(){
+    return view ('login/login');
+    });

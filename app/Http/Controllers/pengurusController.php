@@ -21,6 +21,7 @@ class pengurusController extends Controller
     public function store(Request $request)
     {
         DB::table('pengurus')->insert([
+            'id_pengurus' => $request->id_pengurus,
             'nama' => $request->nama,
             'email' => $request->email,
             'hp' => $request->hp,

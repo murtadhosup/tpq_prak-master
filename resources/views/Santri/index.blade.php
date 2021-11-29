@@ -6,20 +6,48 @@
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     </head>
     <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Santri</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Santri</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pengurus</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Buku</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
 
         <div class="container">
             <div class = 'row'>
                 <div class='col-6'>
                    <h1>Santri</h1>
-                <div class='col-6'>
-                  
-                       <button type="button" class="btn btn-primary btn-sm float-right" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                       Santri
-                       </button>
-                    </div>
+                     <!-- Button trigger modal -->
+                <a href="{{ url('Santri/create') }}" class="btn btn-success btn-sm">
+                  <i class="fa fa-plus"></i> Add
+              </a>
 
-                      </div>
-                      
+
+                  Tambah Santri
+                 
+                  </button>
+                    </div>
+                  
+                    </div>
+  
                 <table class='table table-hover'>
                     <tr>
                         <th>ID SANTRI</th>
@@ -34,7 +62,7 @@
                         <th> PASSWORD</th> 
                         <th> TGL MASUK</th>
                         <th> AKTIF</th>    
-                        <th> AKSI</th>             
+                                    
                     </tr>
                     @foreach ($Santris as $Santri)
                     <tr>
